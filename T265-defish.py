@@ -45,9 +45,8 @@ try:
         dst_right = cv2.remap(right_data,mapx,mapy,cv2.INTER_LINEAR,borderMode=cv2.BORDER_CONSTANT)
 
 
-        # crop the image
+        # show the calbrite image
 
-        #cv2.imwrite('calibresult.png',dst)
         cv2.imshow('left', dst_left)
         cv2.imshow('left_ori', left_data)
         cv2.imshow('right', dst_right)
